@@ -4,3 +4,22 @@
   box-sizing: border-box;
 }
 
+.App{
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(18, 35, 51);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MainCon{
+  height: 400px;
+  width: 400px;
+  background-color: aliceblue;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
