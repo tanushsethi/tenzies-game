@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 *{
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  color: rgb(0, 19, 40);
 }
 
 .App{
@@ -16,10 +20,22 @@
 .MainCon{
   height: 400px;
   width: 400px;
+  padding: 0px 50px;
   background-color: aliceblue;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.Header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Header p{
+  font-weight: 300;
+  text-align: center;
 }
