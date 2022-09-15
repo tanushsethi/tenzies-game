@@ -47,14 +47,31 @@
 }
 
 .dice{
-  border: 1px solid black;
+  box-shadow: -2px 3px 7px 0px rgba(0, 22, 53, 0.2);
   height: 50px;
   width: 50px;
   margin:8px 8px;
-  border-radius: 5px;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   user-select: none;
   cursor: pointer;
+}
+
+.Footer{
+padding-top: 20px;
+}
+
+.green{
+  background-color: #59E391;
+}
+
+.Footer button{
+  border: none;
+  border-radius: 10px;
+  background-color: #5035FF;
+  color: whitesmoke;
+  height: 40px;
+  width: 85px;
 }
