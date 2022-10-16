@@ -2,6 +2,7 @@ import React from "react";
 import dataArray from "../data";
 import Dice from "./Dice";
 import Footer from "./Footer"
+import Confetti from "react-confetti"
 
 function Game() {
 
@@ -60,6 +61,7 @@ function Game() {
 
     return (
         <>
+        {win && <Confetti />}
         <div className="Game">
             {elementArray}
             
