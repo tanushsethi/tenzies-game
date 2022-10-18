@@ -58,6 +58,38 @@
   margin:8px 8px;
   user-select: none;
   background-color: rgba(255, 255, 255, 0.944);
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.overlay1{
+  background-image: url(./assests/1.png);
+}
+.overlay2 {
+  background-image: url(./assests/2.png);
+}
+.overlay3 {
+  background-image: url(./assests/3.png);
+}
+.overlay4 {
+  background-image: url(./assests/4.png);
+}
+.overlay5 {
+  background-image: url(./assests/5.png);
+}
+.overlay6 {
+  background-image: url(./assests/6.png);
 }
 
 .dice:active {
