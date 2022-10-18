@@ -21,7 +21,7 @@
   height: 400px;
   width: 400px;
   padding: 0px 30px;
-  background-color: aliceblue;
+  background-color: rgb(255, 253, 232);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
