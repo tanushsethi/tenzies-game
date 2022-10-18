@@ -6,12 +6,33 @@ import Confetti from "react-confetti"
 
 function Game() {
 
+    // const[time , setTime] = React.useState({
+    //     second:0,
+    //     minute:0
+    // });
     const [dataState, setDataState] = React.useState(dataArray);
     const [win, setWin] = React.useState(false);
 
     React.useEffect(()=>{
+        // startTimer();
         handleRoll();
     }, []);
+
+
+
+    // function startTimer(){
+    //     var timer = setInterval(() => {
+    //         setTime((currentTime) => {
+    //             var newObj = { ...currentTime };
+    //             newObj.second++;
+    //             if (newObj.second === 59) {
+    //                 newObj.minute++;
+    //                 newObj.second = 0;
+    //             }
+    //             return newObj
+    //         })
+    //     }, 1000);
+    // };
 
     function checkState(){
         var win = true;
@@ -50,6 +71,7 @@ function Game() {
             });
         });
         setWin(false);
+        // startTimer();
     }
 
     var elementArray = dataState.map((diceObject)=>{
@@ -62,6 +84,7 @@ function Game() {
     return (
         <>
         {win && <Confetti />}
+        {/* <div>{time.minute}:{time.second}</div> */}
         <div className="Game">
             {elementArray}
             
