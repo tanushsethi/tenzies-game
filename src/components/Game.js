@@ -10,6 +10,7 @@ function Game() {
     //     second:0,
     //     minute:0
     // });
+
     const [dataState, setDataState] = React.useState(dataArray);
     const [win, setWin] = React.useState(false);
 
@@ -17,8 +18,6 @@ function Game() {
         // startTimer();
         handleRoll();
     }, []);
-
-
 
     // function startTimer(){
     //     var timer = setInterval(() => {
@@ -82,20 +81,17 @@ function Game() {
     });
 
     return (
-        <>
-        {win && <Confetti />}
-        {/* <div>{time.minute}:{time.second}</div> */}
-        <div className="Game">
-            {elementArray}
-            
-        </div>
-        <Footer 
-                win= {win}
-                handleRoll={handleRoll}
-                handleRestart={handleRestart}
-            />
-        </>
-    )
+		<>
+			{win && <Confetti />}
+			{/* <div>{time.minute}:{time.second}</div> */}
+			<div className="Game">{elementArray}</div>
+			<Footer
+				win={win}
+				handleRoll={handleRoll}
+				handleRestart={handleRestart}
+			/>
+		</>
+	);
 }
 
 export default Game;
